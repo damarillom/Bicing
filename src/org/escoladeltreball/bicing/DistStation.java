@@ -5,12 +5,14 @@ public class DistStation {
 	private int id;
 	private String type;
 	private int bikes;
-	public DistStation(int id, double dist, String type, int bikes) {
+	private String status;
+	public DistStation(int id, double dist, String type, int bikes, String status) {
 		super();
 		this.dist = dist;
 		this.id = id;
 		this.type = type;
 		this.bikes = bikes;
+		this.status = status;
 	}
 	public double getDist() {
 		return dist;
@@ -35,6 +37,12 @@ public class DistStation {
 	}
 	public void setBikes(int bikes) {
 		this.bikes = bikes;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
 	} 
 	
 	
